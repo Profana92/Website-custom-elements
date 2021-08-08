@@ -1,0 +1,8 @@
+.nav-side-box {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  background-color: blueviolet;
+  width: 3vw;
+  height: 10vh;
+}

@@ -1,0 +1,29 @@
+nav {
+  background-color: hotpink;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+}
+ul {
+  margin: auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+li {
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+  color: blueviolet;
+}
