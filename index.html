@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
     <title>Document</title>
     <meta
       name="description"
@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="/js/index.js"></script>
   </head>
   <header>
     <nav>
@@ -31,12 +32,25 @@
         <li>
           <a href="index.html" target="_self">Projects</a>
         </li>
+        <li>
+          <a class="btn" href="index.html" target="_self">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
   <body>
-    <section class="section-style" id="who-am-i">
-      <h1>Who am I?</h1>
+    <section class="section-style section-parallax" id="who-am-i">
+      <div id="section1-top-separator"><h1>Who am I?</h1></div>
+      <div id="section1-bottom-separator">
+        <svg
+          width="100%"
+          height="100"
+          viewBox="0 0 100 102"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 0 L50 90 L100 0 V100 H0" fill="skyblue" />
+        </svg>
+      </div>
     </section>
     <section class="section-style" id="my-projects-snip">My projects</section>
     <section class="section-style section-parallax" id="pure-html-projects">
