@@ -1,9 +1,15 @@
+/** selektory elementow */
+* {
+  box-sizing: border-box;
+}
+/** powyzej ulatwienie sobie zycia */
+
 nav {
-  background-color: hotpink;
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: rgb(255, 0, 0);
+  padding: 15px;
+  width: 100vw;
 }
 ul {
   margin: auto;
@@ -26,4 +32,34 @@ a {
 a:hover {
   text-decoration: none;
   color: blueviolet;
+}
+
+/** selektory klas */
+.section-style {
+  min-height: 50vh;
+}
+.section-parallax {
+  background-image: url(/assets/bgimg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+/* selektory identyfikatorow */
+
+#my-projects-snip {
+  background-color: cadetblue;
+}
+
+#who-am-i {
+  background-color: chartreuse;
+}
+
+#pure-html-projects {
+}
+
+#pure-css-projects {
+  background-color: chocolate;
 }
