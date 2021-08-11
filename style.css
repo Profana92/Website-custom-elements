@@ -1,47 +1,77 @@
+/** Paleta kolorow*/
+:root {
+  --grey: rgb(85, 91, 110);
+  --platinum: rgb(234, 234, 234);
+  --white: rgb(255, 255, 255);
+  --red: rgb(215, 38, 56);
+  --goldenrod: rgb(218, 165, 32);
+  --yonder: rgb(173, 178, 211);
+  --black: rgb(0, 0, 0);
+  --grey_rgb: 85, 91, 110;
+  --platinum_rgb: 234, 234, 234;
+  --white_rgb: 255, 255, 255;
+  --red_rgb: 215, 38, 56;
+  --goldenrod_rgb: 218, 165, 32;
+  --yonder_rgb: 173, 178, 211;
+  --black_rgb: 0, 0, 0;
+}
 /** selektory elementow */
 * {
   box-sizing: border-box;
 }
+img {
+  width: 75px;
+}
 /** powyzej ulatwienie sobie zycia */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,400&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   position: fixed;
   top: 0;
-  background-color: rgba(255, 255, 255, 0);
-  padding: 15px;
+  background-color: rgba(var(--grey_rgb), 0.1);
+  padding: 10px 5vw 10px 5vw;
   width: 100%;
   min-height: 5vh;
-  margin: 2vh;
   z-index: 9999;
+  box-shadow: 0 3px 15px 1px var(--grey);
+  display: flex;
 }
+
 ul {
   margin: auto;
-  max-width: 80%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   width: 100%;
 }
+
 li {
+  border-right: 2px solid black;
   width: 20%;
   text-align: center;
   display: inline-block;
   text-decoration: none !important;
   list-style: none;
 }
+li:last-child {
+  border-right: none;
+}
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--red);
 }
 a:hover {
   text-decoration: none;
-  color: blueviolet;
+  color: var(--goldenrod);
+  text-shadow: 0px 0px 5px rgba(var(--black_rgb), 0.91);
 }
 
 /** selektory klas */
 a.btn {
-  border: 1px solid black;
   padding: 10px;
-  margin: 50px;
 }
 .section-style {
   min-height: 50vh;
@@ -86,8 +116,13 @@ a.btn {
 }
 
 @media only screen and (max-width: 800px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
   nav {
-    background-color: blanchedalmond;
+    flex-direction: column;
+    background-color: #87ceeb;
     margin: 0;
   }
   .section-parallax {
@@ -99,17 +134,17 @@ a.btn {
     align-items: center;
   }
   a.btn {
-    padding: 3vw;
+    padding: 1vw;
     margin: 0;
     border: none;
-    border-bottom: 1px solid black;
   }
   li {
     width: 100%;
+    border-right: none;
   }
   a {
     display: inline-block;
-    padding: 3vw;
+    padding: 1vw;
     min-width: 40vw;
     border-bottom: 1px solid black;
   }
