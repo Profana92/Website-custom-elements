@@ -24,32 +24,49 @@ img {
 }
 /** powyzej ulatwienie sobie zycia */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,400&family=Roboto:wght@300;400;500;700;900&display=swap");
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+.verticali-aligned {
+  margin: auto;
+}
 
 nav {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   position: fixed;
   top: 0;
-  background-color: rgba(var(--grey_rgb), 0.1);
+  background-color: rgba(var(--black_rgb), 0.3);
   padding: 10px 5vw 10px 5vw;
   width: 100%;
   min-height: 5vh;
   z-index: 9999;
   box-shadow: 0 3px 15px 1px var(--grey);
   display: flex;
+  justify-content: space-between;
 }
-
+h1.big-logo-text {
+  font-size: 18px;
+  color: var(--platinum);
+}
+p.small-logo-text {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--platinum);
+}
 ul {
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  width: 100%;
+  width: 60%;
 }
 
 li {
-  border-right: 2px solid black;
+  border-right: 2px solid #048aed;
   width: 20%;
   text-align: center;
   display: inline-block;
@@ -61,7 +78,8 @@ li:last-child {
 }
 a {
   text-decoration: none;
-  color: var(--red);
+  color: var(--platinum);
+  font-weight: 400;
 }
 a:hover {
   text-decoration: none;
@@ -88,7 +106,7 @@ a.btn {
 /* selektory identyfikatorow */
 
 #my-projects-snip {
-  background-color: skyblue;
+  background-color: var(--yonder);
 }
 
 #who-am-i {
